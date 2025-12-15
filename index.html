@@ -1,58 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Zhang Group | SEU</title>
     
-    <!-- SEO Optimization -->
-    <meta name="description" content="Q. ZHANG IN-SITU TEM LAB at Southeast University (Wuxi Campus), led by Prof. Qiubo Zhang. Research focuses on In-situ Liquid Cell TEM, Atomic-scale Manufacturing, and High-Entropy Alloys.">
-    <meta name="keywords" content="Qiubo Zhang, Zhang Group, Southeast University, SEU, In-situ TEM, Liquid Cell, High-Entropy Alloys, Nanodevices, 张秋波, 东南大学, 课题组, 原位电子显微学">
-    <meta name="author" content="Q. ZHANG IN-SITU TEM LAB">
-    
-    <title>Q. ZHANG IN-SITU TEM LAB</title>
-    
-    <!-- Favicon (网页图标) -->
-    <link rel="icon" type="image/png" href="images/icon.png">
-
-    <!-- Bootstrap 5 CSS -->
+    <!-- Bootstrap 5 CSS (用于快速布局和响应式) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Fonts (国内镜像加速) -->
-    <link href="https://fonts.loli.net/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-
-    <!-- FontAwesome Icons -->
+    
+    <!-- Google Fonts (提升文字质感：Playfair Display用于标题，Inter用于正文) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons (用于显示图标) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom CSS -->
+    
+    <!-- 自定义 CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- AOS Animation Library -->
+    
+    <!-- AOS Animation Library (滚动动画库) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
-    
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="loader-spinner"></div>
-    </div>
 
     <!-- Navigation 导航栏 -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-light transition-all" id="mainNav">
         <div class="container">
-            <!-- Logo区域 -->
+            <!-- Logo区域：方便您后续替换图片 -->
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="images/logo2.png" alt="Lab Logo" class="nav-logo me-2" loading="lazy">
+                <!-- 这里使用了一个网络图标代替Logo，您可以把src换成您的logo文件路径 -->
+                <img src="https://cdn-icons-png.flaticon.com/512/3050/3050212.png" alt="Lab Logo" class="nav-logo me-2">
                 <div class="brand-text">
-                    <span class="group-name">Q. ZHANG IN-SITU TEM LAB</span>
+                    <span class="group-name">The Zhang Group</span>
+                    <span class="uni-name">SEU · Wuxi</span>
                 </div>
             </a>
-
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+            
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
@@ -70,6 +56,7 @@
     </nav>
 
     <!-- Hero Section 首屏大图 -->
+    <!-- 背景图使用了网络上的TEM/材料科学相关图片 -->
     <header class="hero-section d-flex align-items-center" style="background-image: url('https://images.unsplash.com/photo-1576086213369-97a306d36557?q=80&w=2080&auto=format&fit=crop');">
         <div class="overlay"></div>
         <div class="container text-white position-relative z-2">
@@ -80,21 +67,9 @@
                     <p class="lead mb-5 opacity-90">
                         Bridging the gap between material structure and device performance through in-situ liquid cell TEM and atomic-scale manufacturing.
                     </p>
-                    <div class="d-flex flex-wrap gap-3">
-                        <a href="research.html" class="btn btn-outline-light rounded-0 px-4 py-2">Explore Research</a>
-                        <a href="#pi-intro" class="btn btn-seu-green rounded-0 px-4 py-2">Meet the PI</a>
-                    </div>
+                    <a href="#research" class="btn btn-outline-light rounded-0 px-4 py-2 me-3">Explore Research</a>
+                    <a href="#pi-intro" class="btn btn-seu-green rounded-0 px-4 py-2">Meet the PI</a>
                 </div>
-            </div>
-        </div>
-        
-        <!-- Scroll Down Indicator -->
-        <div class="scroll-down-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <div class="arrow-span">
-                <span></span><span></span><span></span>
             </div>
         </div>
     </header>
@@ -106,7 +81,7 @@
                 <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right">
                     <div class="img-wrapper shadow-lg position-relative">
                         <!-- PI 照片占位符 -->
-                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=987&auto=format&fit=crop" alt="Prof. Qiubo Zhang" class="img-fluid rounded" loading="lazy">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=987&auto=format&fit=crop" alt="Prof. Qiubo Zhang" class="img-fluid rounded">
                         <div class="img-caption bg-seu-green text-white p-2 text-center position-absolute bottom-0 w-100">
                             <strong>Prof. Qiubo Zhang (张秋波)</strong>
                         </div>
@@ -121,29 +96,6 @@
                     <p class="text-muted">
                         With extensive experience from <strong>UC Berkeley</strong> and <strong>LBNL</strong>, his group focuses on the atomic-scale dynamics of electrified solid-liquid interfaces and the synthesis of high-entropy alloys. He has published over 40 papers in top-tier journals including <em>Nature</em>, <em>Nature Communications</em>, and <em>Science Advances</em>.
                     </p>
-                    
-                    <!-- Key Statistics -->
-                    <div class="row text-center mt-4 mb-4 gx-2">
-                        <div class="col-4">
-                            <div class="p-2 border rounded bg-light h-100">
-                                <h3 class="fw-bold text-seu-green mb-0 display-6">40+</h3>
-                                <span class="small text-muted text-uppercase fw-bold">Publications</span>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="p-2 border rounded bg-light h-100">
-                                <h3 class="fw-bold text-dark-blue mb-0 display-6">18+</h3>
-                                <span class="small text-muted text-uppercase fw-bold">1st/Corresp.</span>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="p-2 border rounded bg-light h-100">
-                                <h3 class="fw-bold text-warning mb-0 display-6">2</h3>
-                                <span class="small text-muted text-uppercase fw-bold">US Patents</span>
-                            </div>
-                        </div>
-                    </div>
-                    
                     <div class="mt-4">
                         <a href="people.html" class="text-decoration-none fw-bold text-dark link-arrow">
                             Read Full Biography <i class="fas fa-arrow-right ms-2 text-seu-green"></i>
@@ -166,53 +118,47 @@
             <div class="row g-4">
                 <!-- Research Card 1 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <a href="research.html" class="text-decoration-none text-dark">
-                        <div class="card h-100 border-0 shadow-sm hover-card">
-                            <div class="card-body p-4 text-center">
-                                <div class="icon-box mb-4 bg-green-light text-seu-green rounded-circle mx-auto d-flex align-items-center justify-content-center">
-                                    <i class="fas fa-microscope fa-2x"></i>
-                                </div>
-                                <h4 class="card-title h5 fw-bold mb-3">In-situ Liquid Cell TEM</h4>
-                                <p class="card-text text-muted small">
-                                    Developing advanced liquid-cell TEM techniques to visualize atomic dynamics of nanomaterials under realistic working conditions.
-                                </p>
+                    <div class="card h-100 border-0 shadow-sm hover-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box mb-4 bg-green-light text-seu-green rounded-circle mx-auto d-flex align-items-center justify-content-center">
+                                <i class="fas fa-microscope fa-2x"></i>
                             </div>
+                            <h4 class="card-title h5 fw-bold mb-3">In-situ Liquid Cell TEM</h4>
+                            <p class="card-text text-muted small">
+                                Developing advanced liquid-cell TEM techniques to visualize atomic dynamics of nanomaterials under realistic working conditions.
+                            </p>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
                 <!-- Research Card 2 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <a href="research.html" class="text-decoration-none text-dark">
-                        <div class="card h-100 border-0 shadow-sm hover-card">
-                            <div class="card-body p-4 text-center">
-                                <div class="icon-box mb-4 bg-blue-light text-primary rounded-circle mx-auto d-flex align-items-center justify-content-center">
-                                    <i class="fas fa-microchip fa-2x"></i>
-                                </div>
-                                <h4 class="card-title h5 fw-bold mb-3">Atomic-scale Device Fabrication</h4>
-                                <p class="card-text text-muted small">
-                                    Investigating the structure-property relationships of micro/nano electronic devices through atomic-scale manipulation and characterization.
-                                </p>
+                    <div class="card h-100 border-0 shadow-sm hover-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box mb-4 bg-blue-light text-primary rounded-circle mx-auto d-flex align-items-center justify-content-center">
+                                <i class="fas fa-microchip fa-2x"></i>
                             </div>
+                            <h4 class="card-title h5 fw-bold mb-3">Atomic-scale Device Fabrication</h4>
+                            <p class="card-text text-muted small">
+                                Investigating the structure-property relationships of micro/nano electronic devices through atomic-scale manipulation and characterization.
+                            </p>
                         </div>
-                    </a>
+                    </div>
                 </div>
 
                 <!-- Research Card 3 -->
                 <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-                    <a href="research.html" class="text-decoration-none text-dark">
-                        <div class="card h-100 border-0 shadow-sm hover-card">
-                            <div class="card-body p-4 text-center">
-                                <div class="icon-box mb-4 bg-purple-light text-purple rounded-circle mx-auto d-flex align-items-center justify-content-center">
-                                    <i class="fas fa-layer-group fa-2x"></i>
-                                </div>
-                                <h4 class="card-title h5 fw-bold mb-3">High-Entropy Alloys & Interfaces</h4>
-                                <p class="card-text text-muted small">
-                                    Studying isothermal solidification for HEA synthesis and atomic dynamics of electrified solid–liquid interfaces.
-                                </p>
+                    <div class="card h-100 border-0 shadow-sm hover-card">
+                        <div class="card-body p-4 text-center">
+                            <div class="icon-box mb-4 bg-purple-light text-purple rounded-circle mx-auto d-flex align-items-center justify-content-center">
+                                <i class="fas fa-layer-group fa-2x"></i>
                             </div>
+                            <h4 class="card-title h5 fw-bold mb-3">High-Entropy Alloys & Interfaces</h4>
+                            <p class="card-text text-muted small">
+                                Studying isothermal solidification for HEA synthesis and atomic dynamics of electrified solid–liquid interfaces.
+                            </p>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -238,9 +184,7 @@
                             <span class="d-block small text-muted">2025</span>
                         </div>
                         <div>
-                            <h5 class="fw-bold">
-                                <a href="news.html" class="text-dark text-decoration-none hover-green">Q. ZHANG IN-SITU TEM LAB was officially established!</a>
-                            </h5>
+                            <h5 class="fw-bold"><a href="#" class="text-dark text-decoration-none hover-green">The Zhang Group was officially established!</a></h5>
                             <p class="text-muted small mb-0">The Laboratory of In-situ Electron Microscopy & Devices is now open at SEU Wuxi Campus. Welcome our first cohort of graduate students!</p>
                         </div>
                     </div>
@@ -254,9 +198,7 @@
                             <span class="d-block small text-muted">2025</span>
                         </div>
                         <div>
-                            <h5 class="fw-bold">
-                                <a href="news.html" class="text-dark text-decoration-none hover-green">New publication in Nature</a>
-                            </h5>
+                            <h5 class="fw-bold"><a href="#" class="text-dark text-decoration-none hover-green">New publication in Nature</a></h5>
                             <p class="text-muted small mb-0">Prof. Zhang's work on "Isothermal solidification for high-entropy alloy synthesis" has been published in Nature. Congratulations!</p>
                         </div>
                     </div>
@@ -270,7 +212,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4 mb-lg-0">
-                    <h4 class="mb-4">Q. ZHANG IN-SITU TEM LAB</h4>
+                    <h4 class="mb-4">The Zhang Group</h4>
                     <p class="small opacity-75">
                         School of Integrated Circuits<br>
                         Southeast University (Wuxi Campus)
@@ -285,32 +227,26 @@
                         <li><a href="research.html" class="text-white text-decoration-none">Research</a></li>
                         <li><a href="publications.html" class="text-white text-decoration-none">Publications</a></li>
                         <li><a href="join.html" class="text-white text-decoration-none">Join Us</a></li>
-                        <li><a href="https://www.seu.edu.cn" target="_blank" rel="noopener noreferrer" class="text-white text-decoration-none">Southeast University</a></li>
+                        <li><a href="https://www.seu.edu.cn" target="_blank" class="text-white text-decoration-none">Southeast University</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4">
                     <h5 class="mb-3">Contact</h5>
                     <ul class="list-unstyled small opacity-75">
                         <li class="mb-2"><i class="fas fa-envelope me-2"></i> qiubozhang999@gmail.com</li>
-                        <li class="mb-2"><i class="fab fa-weixin me-2"></i> ID: xxxx</li>
+                        <li class="mb-2"><i class="fab fa-weixin me-2"></i> ID: konduodao</li>
                     </ul>
                 </div>
             </div>
             <div class="border-top border-secondary mt-4 pt-4 text-center small opacity-50">
-                &copy; 2025 Q. ZHANG IN-SITU TEM LAB. All Rights Reserved. Designed for Science.
+                &copy; 2025 The Zhang Group. All Rights Reserved. Designed for Science.
             </div>
         </div>
     </footer>
-
-    <!-- Back to Top Button -->
-    <a href="#" id="back-to-top" class="btn btn-seu-green rounded-circle shadow back-to-top-btn" title="Back to Top">
-        <i class="fas fa-arrow-up"></i>
-    </a>
 
     <!-- JS Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
